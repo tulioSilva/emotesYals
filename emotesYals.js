@@ -1,4 +1,3 @@
-var emotesYals = function emotesYals() {
 	/* 
 	* Carrega todos os eventos do plug.dj
 	*/
@@ -116,4 +115,3 @@ var emotesYals = function emotesYals() {
 			break;
 		}
 	}
-}

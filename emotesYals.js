@@ -1,7 +1,6 @@
 	API.on(API.CHAT_COMMAND, eventCmd);
 	function eventCmd(cmd) {
 		var args = cmd.split(' '),
-			user = userLookUp(args[1]),
 			command = args[0].substr(1).toLowerCase();
 		switch (command) {
 			/* EMOTES */

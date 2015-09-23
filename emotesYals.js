@@ -1,17 +1,4 @@
 	API.on(API.CHAT_COMMAND, eventCmd);
-	/* 
-	* Carrega todos os eventos do plug.dj
-	*/
-	function loadEvents() {
-		API.on(API.CHAT, eventChat);
-		API.on(API.CHAT_COMMAND, eventCmd);
-		API.on(API.USER_JOIN, eventUserJoin);
-		API.on(API.USER_LEAVE, eventUserLeave);
-		API.on(API.ADVANCE, eventAdvance);
-		API.on(API.VOTE_UPDATE, eventVote);
-		API.on(API.GRAB_UPDATE, eventGrab);
-	}
-	loadEvents();
 	function eventCmd(cmd) {
 		var args = cmd.split(' '),
 			user = userLookUp(args[1]),

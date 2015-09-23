@@ -11,19 +11,7 @@ var emotesYals = function emotesYals() {
 		API.on(API.VOTE_UPDATE, eventVote);
 		API.on(API.GRAB_UPDATE, eventGrab);
 	}
-
-	/* 
-	* Descarrega todos os eventos do plug.dj
-	*/
-	function unloadEvents() {
-		API.off(API.CHAT, eventChat);
-		API.off(API.CHAT_COMMAND, eventCmd);
-		API.off(API.USER_JOIN, eventUserJoin);
-		API.off(API.USER_LEAVE, eventUserLeave);
-		API.off(API.ADVANCE, eventAdvance);
-		API.off(API.VOTE_UPDATE, eventVote);
-		API.off(API.GRAB_UPDATE, eventGrab);
-	}
+	loadEvents();
 	function eventCmd(cmd) {
 		var args = cmd.split(' '),
 			user = userLookUp(args[1]),

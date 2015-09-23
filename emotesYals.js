@@ -1,3 +1,4 @@
+	API.on(API.CHAT_COMMAND, eventCmd);
 	/* 
 	* Carrega todos os eventos do plug.dj
 	*/
